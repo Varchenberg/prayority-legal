@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Prayority — Política de Privacidad / Privacy Policy</title>
 <style>
-  :root { --bg:#F7F0E6; --ink:#2B2622; --muted:#6B6258; --wine:#7A1E2B; --gold:#C99A3F; --line:#E4D8C6; }
+  :root { --bg:#F7F0E6; --ink:#2B2622; --muted:#6B6258; --wine:#7A1E2B; --gold:#C99A3F; --line:#E4D8C6; --card:#FBF6EE; }
   * { box-sizing: border-box; }
   body { margin:0; background:var(--bg); color:var(--ink);
     font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
@@ -13,17 +13,25 @@
   .wrap { max-width:720px; margin:0 auto; padding:32px 20px 80px; }
   header { border-bottom:2px solid var(--gold); padding-bottom:16px; margin-bottom:8px; }
   h1 { font-size:1.6rem; margin:0 0 4px; color:var(--wine); }
-  h2 { font-size:1.2rem; margin:32px 0 8px; color:var(--wine); }
+  h2 { font-size:1.2rem; margin:32px 0 8px; color:var(--wine); scroll-margin-top:12px; }
   h3 { font-size:1rem; margin:20px 0 4px; }
   .eff { color:var(--muted); font-size:.9rem; }
   .nav { margin:16px 0 0; font-size:.95rem; }
   .nav a { color:var(--wine); text-decoration:none; border-bottom:1px solid var(--gold); }
-  a { color:var(--wine); }
-  ul { padding-left:1.2em; }
+  a { color:var(--wine); overflow-wrap:anywhere; }
+  ul, ol { padding-left:1.2em; }
   li { margin:4px 0; }
   .sep { height:2px; background:var(--line); margin:56px 0 0; border:0; }
   footer { margin-top:48px; color:var(--muted); font-size:.85rem; }
   code { background:#efe6d6; padding:1px 5px; border-radius:4px; font-size:.9em; }
+  .toc { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:12px 16px; margin:20px 0; font-size:.95rem; }
+  .toc ol { margin:6px 0 0; }
+  .toc a { text-decoration:none; border-bottom:1px solid var(--gold); }
+  .box { background:var(--card); border-left:4px solid var(--gold); border-radius:6px; padding:12px 16px; margin:16px 0; }
+  .tbl { width:100%; overflow-x:auto; }
+  table { width:100%; border-collapse:collapse; font-size:.92rem; margin:8px 0; }
+  th, td { text-align:left; vertical-align:top; padding:8px 6px; border-bottom:1px solid var(--line); }
+  th { color:var(--wine); font-weight:600; }
 </style>
 </head>
 <body>
@@ -31,141 +39,331 @@
 
   <header>
     <h1>Prayority — Política de Privacidad</h1>
-    <p class="eff">Última actualización: 27 de octubre de 2026 · Versión de la app: 1.0.0</p>
-    <p class="nav">Idioma / Language: <strong>Español</strong> · <a href="#english">English ↓</a></p>
+    <p class="eff">Última actualización: 30 de octubre de 2026</p>
+    <p class="nav">Idioma / Language: <strong>Español</strong> · <a href="#english">English ↓</a> · <a href="../terms/">Términos de uso</a></p>
   </header>
 
   <!-- ===================== ESPAÑOL ===================== -->
   <section id="espanol">
 
-    <h2>Resumen</h2>
-    <p>Prayority es una aplicación para aprender la Biblia con lecciones cortas, lectura, oración y
-       versículo del día. <strong>Puedes usarla sin registrarte.</strong> No mostramos publicidad, no
-       vendemos datos y <strong>no te rastreamos</strong> entre apps o sitios web de otras empresas.</p>
-    <p>Algunas funciones son opcionales y solo envían datos si las usas:</p>
+    <div class="box">
+      <p><strong>En pocas palabras.</strong> Prayority es una app para leer y escuchar la Biblia, orar y
+         aprender. La mayor parte de lo que haces (progreso, notas, diario, intenciones, tu tradición
+         cristiana) <strong>se queda en tu teléfono</strong>. No mostramos publicidad, no vendemos datos y
+         no te rastreamos entre apps de otras empresas. Solo enviamos datos a nuestros proveedores cuando
+         hace falta para una función (tu cuenta, el muro de oración, el guía con IA) o cuando lo aceptas
+         (estadísticas de uso). Puedes cambiar tus permisos en <strong>Perfil → Privacidad</strong> y
+         eliminar tu cuenta desde la app.</p>
+    </div>
+
+    <nav class="toc" aria-label="Índice">
+      <strong>Índice</strong>
+      <ol>
+        <li><a href="#es-1">Quién es el responsable</a></li>
+        <li><a href="#es-2">Qué datos tratamos</a></li>
+        <li><a href="#es-3">Creencias religiosas (datos sensibles)</a></li>
+        <li><a href="#es-4">Para qué usamos tus datos</a></li>
+        <li><a href="#es-5">Bases legales (UE, EEE, Reino Unido y Suiza)</a></li>
+        <li><a href="#es-6">Con quién compartimos datos</a></li>
+        <li><a href="#es-7">Transferencias internacionales</a></li>
+        <li><a href="#es-8">Cuánto tiempo conservamos los datos</a></li>
+        <li><a href="#es-9">Tus derechos y cómo retirar tu consentimiento</a></li>
+        <li><a href="#es-10">Edad mínima</a></li>
+        <li><a href="#es-11">Seguridad</a></li>
+        <li><a href="#es-12">Aviso de privacidad para México</a></li>
+        <li><a href="#es-13">Estados Unidos y California</a></li>
+        <li><a href="#es-14">Señales «Do Not Track»</a></li>
+        <li><a href="#es-15">Cambios en esta política</a></li>
+        <li><a href="#es-16">Contacto</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="es-1">1. Quién es el responsable</h2>
+    <p>El responsable del tratamiento de tus datos en la app Prayority es <strong>Dmytro Varchenko</strong>,
+       desarrollador independiente con residencia en <strong>[PAÍS / COUNTRY]</strong> («nosotros»).
+       Contacto: <a href="mailto:dmitryvarcher@gmail.com">dmitryvarcher@gmail.com</a>.</p>
+    <p>Esta política explica qué datos trata la app, para qué, con quién se comparten y qué derechos
+       tienes. Completa los <a href="../terms/">Términos de uso</a>.</p>
+
+    <h2 id="es-2">2. Qué datos tratamos</h2>
+
+    <h3>2.1. Datos que se quedan en tu dispositivo</h3>
+    <p>No salen de tu teléfono: tu progreso (lecciones, cursos, racha, XP, protecciones de racha), los
+       momentos de «Hoy», planes del corazón y versículos memorizados, tus resaltados, marcadores y notas
+       de la Biblia, tu diario, tus intenciones, tus preferencias, la <strong>tradición cristiana</strong>
+       que elijas (católica, evangélica u ortodoxa), el historial de conversación con tu guía y la lectura
+       en voz alta (usa la voz del sistema). Si borras la app, se borran. No tenemos acceso a ellos.</p>
+
+    <h3>2.2. Cuenta (Iniciar sesión con Apple)</h3>
+    <p>Después de la bienvenida, la app te pide iniciar sesión con <strong>Iniciar sesión con Apple</strong>.
+       Guardamos en nuestro servidor:</p>
     <ul>
-      <li><strong>Comunidad</strong> (muro de peticiones de oración): requiere iniciar sesión con Apple.</li>
-      <li><strong>Tu guía</strong> (asistente con inteligencia artificial): requiere iniciar sesión y tu
-          consentimiento previo dentro de la app.</li>
+      <li>el <strong>identificador de cuenta</strong> que genera Apple;</li>
+      <li>el <strong>correo</strong> que Apple nos comparte (puede ser una dirección privada de Apple si
+          eliges ocultar el tuyo);</li>
+      <li>tu <strong>nombre visible</strong> (el que Apple comparte o el que escribiste al empezar; puedes
+          cambiarlo).</li>
     </ul>
+    <p>No recibimos tu contraseña de Apple.</p>
 
-    <h2>1. Datos que se quedan en tu dispositivo</h2>
-    <p>No salen de tu teléfono: tu progreso (lecciones, racha, XP, protecciones de racha), los planes y
-       momentos de «Hoy» completados, tus resaltados, marcadores y notas de la Biblia, tu diario, tus
-       preferencias, el historial de conversación con tu guía y la lectura en voz alta (usa la voz del
-       sistema). Si borras la app, se borran.</p>
-
-    <h2>2. Analítica de uso (Amplitude)</h2>
-    <p>Para entender cómo se usa la app y mejorarla, el servicio <strong>Amplitude</strong> recibe:</p>
+    <h3>2.3. Muro de oración (Comunidad)</h3>
+    <p>Si usas el muro, guardamos en nuestro servidor:</p>
     <ul>
-      <li><strong>Uso de la app:</strong> eventos como abrir la app, empezar o completar una lección,
-          abrir el lector bíblico o un momento de oración, y la duración de la sesión.</li>
-      <li><strong>Compras:</strong> inicio, éxito o cancelación de una suscripción (sin datos de pago).</li>
-      <li><strong>Identificador del dispositivo:</strong> un identificador aleatorio generado por la app.
-          No usamos el identificador publicitario (IDFA).</li>
-      <li><strong>Ubicación aproximada:</strong> solo el país, deducido de la conexión. No guardamos la
-          dirección IP, la ciudad ni la ubicación precisa.</li>
-      <li><strong>Datos técnicos:</strong> modelo de dispositivo, versión del sistema y de la app, idioma.</li>
-    </ul>
-    <p>La analítica no incluye tu tradición cristiana ni el texto de tus peticiones, intenciones, notas,
-       diario ni conversaciones.</p>
-
-    <h2>3. Cuenta y Comunidad (opcional)</h2>
-    <p>Si inicias sesión con <strong>Iniciar sesión con Apple</strong>, creamos una cuenta y guardamos en
-       nuestro servidor:</p>
-    <ul>
-      <li><strong>Identificador de cuenta</strong> y el <strong>correo</strong> que Apple nos comparte
-          (puede ser una dirección privada de Apple si eliges ocultarlo).</li>
-      <li><strong>Nombre visible:</strong> tu nombre de pila, si Apple lo comparte o lo escribiste al
-          empezar. Puedes cambiarlo.</li>
-      <li><strong>Peticiones de oración que publiques:</strong> el texto, la categoría, a quién se muestra,
-          si es anónima, tu testimonio si la marcas como respondida, y las fechas.</li>
+      <li><strong>Peticiones que publiques:</strong> texto, categoría, a quién se muestra, si es anónima,
+          tu testimonio si la marcas como respondida, y las fechas.</li>
       <li><strong>Oraciones por otros:</strong> por qué peticiones oraste.</li>
-      <li><strong>Moderación y seguridad:</strong> reportes que envíes, usuarios que bloquees y contadores
-          para limitar el abuso (por ejemplo, número de publicaciones al día).</li>
+      <li><strong>Moderación y seguridad:</strong> reportes que envíes o recibas, usuarios que bloquees y
+          contadores para limitar el abuso (por ejemplo, publicaciones por día).</li>
     </ul>
     <p><strong>Quién ve qué:</strong> las peticiones del muro público son visibles para las personas con
-       sesión iniciada durante 7 días. Si publicas de forma anónima, no se muestra tu nombre ni tu cuenta.
-       Nunca mostramos tu correo. Quien publica una petición ve cuántas personas oraron, pero no quiénes
-       (salvo tus amigos).</p>
-    <p><strong>Moderación:</strong> filtramos palabras ofensivas, puedes reportar contenido y bloquear
-       usuarios, y las publicaciones con varios reportes se ocultan automáticamente.</p>
+       sesión iniciada durante 7 días. Si publicas de forma anónima, no se muestra tu nombre. Nunca
+       mostramos tu correo. Quien publica ve cuántas personas oraron, pero no quiénes (salvo sus amigos).
+       Antes de publicar debes aceptar las normas de la comunidad.</p>
 
-    <h2>4. Tu guía con inteligencia artificial (opcional)</h2>
-    <p>Antes de usarlo te pedimos permiso. Para responderte, enviamos a <strong>Anthropic</strong>
-       (proveedor del modelo de IA Claude), a través de nuestro servidor:</p>
+    <h3>2.4. Guía bíblico con inteligencia artificial</h3>
+    <p>El guía funciona con <strong>Claude</strong>, un modelo de IA de <strong>Anthropic, PBC</strong>
+       (EE. UU.). Solo se activa <strong>si das tu consentimiento previo</strong> dentro de la app. Para
+       responderte, enviamos a Anthropic, a través de nuestro servidor:</p>
     <ul>
       <li>tus mensajes recientes de la conversación, y</li>
-      <li>un resumen de tu progreso: nombre visible, objetivo y nivel que elegiste al empezar, racha, XP,
+      <li>un resumen de contexto: nombre visible, objetivo y nivel que elegiste al empezar, racha, XP,
           lecciones completadas, curso y lección actual, el versículo del día, la lección o el versículo
-          desde el que abriste el chat, y tu tradición cristiana si la elegiste (católica, evangélica u
-          ortodoxa), para que responda dentro de ella.</li>
+          desde el que abriste el chat y, si la elegiste, tu tradición cristiana, para que responda dentro
+          de ella.</li>
     </ul>
     <p>Nuestro servidor <strong>no guarda tus conversaciones</strong>: solo las reenvía y registra cuántos
-       mensajes usaste hoy y el consumo técnico de cada respuesta (sin el texto). Según sus condiciones
-       comerciales, Anthropic no usa estos datos para entrenar sus modelos y los conserva solo durante un
-       tiempo limitado
+       mensajes enviaste cada día y el consumo técnico de cada respuesta (tokens), sin el texto. Según sus
+       condiciones comerciales, Anthropic no usa estos datos para entrenar sus modelos y los conserva solo
+       durante un tiempo limitado
        (<a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">Política de Privacidad de Anthropic</a>).
-       Evita compartir datos sensibles en el chat. Las respuestas las genera una IA, pueden contener
-       errores y no sustituyen el consejo de un pastor, sacerdote o profesional.</p>
-    <p>Si tienes Premium, la app envía a nuestro servidor el comprobante de compra firmado por Apple para
-       quitar el límite diario; guardamos su identificador para asociarlo a una sola cuenta.</p>
+       No compartas en el chat datos de otras personas ni información que no quieras enviar.</p>
+    <p>El plan gratuito permite 5 mensajes al día. Si tienes Premium, la app envía a nuestro servidor la
+       transacción firmada por Apple (JWS) para quitar el límite; guardamos su identificador para asociarlo
+       a una sola cuenta.</p>
 
-    <h2>5. Qué NO hacemos</h2>
+    <h3>2.5. Compras</h3>
+    <p>Las suscripciones se compran y gestionan con Apple. <strong>No recibimos tus datos de pago.</strong>
+       Solo vemos la información de la transacción que Apple nos da para verificar Premium.</p>
+
+    <h3>2.6. Estadísticas de uso (Amplitude) — opcional</h3>
+    <p>En la pantalla de consentimiento de la bienvenida hay un interruptor <strong>«Compartir estadísticas
+       de uso»</strong>. Está <strong>desactivado por defecto</strong> si estás en la UE/EEE, el Reino Unido
+       o Suiza, y activado por defecto en los demás países. Puedes cambiarlo cuando quieras en
+       <strong>Perfil → Privacidad</strong>. Si está apagado, <strong>no se envía nada a Amplitude</strong>.</p>
+    <p>Si está encendido, <strong>Amplitude, Inc.</strong> (servidores en EE. UU.) recibe:</p>
     <ul>
-      <li>No mostramos publicidad ni usamos el identificador publicitario (IDFA).</li>
+      <li><strong>Eventos de uso:</strong> abrir la app y sesiones; pasos de la bienvenida (con el nombre
+          escrito y la tradición ocultos); lecciones iniciadas y completadas; capítulos de la Biblia leídos
+          o escuchados; oraciones iniciadas y completadas (con el identificador de la oración y la pista de
+          música); Rosario iniciado y completado (con el conjunto de misterios); música elegida; pestaña
+          vista; petición publicada o «oré por ti» (solo la categoría y si es anónima); mensaje enviado al
+          guía (solo el número de turno); muro de pago mostrado; prueba o suscripción iniciada (con el
+          identificador del producto).</li>
+      <li><strong>Identificador del dispositivo:</strong> un identificador aleatorio generado por la app.
+          No usamos el identificador publicitario (IDFA) ni pedimos permiso de rastreo (ATT).</li>
+      <li><strong>País:</strong> solo el país. El rastreo de la dirección IP está desactivado; no se guardan
+          la IP, la ciudad ni el operador.</li>
+      <li><strong>Datos técnicos:</strong> modelo de dispositivo, versión del sistema y de la app, idioma
+          del dispositivo e idioma del contenido.</li>
+    </ul>
+    <p><strong>Nunca se envían a Amplitude:</strong> tu tradición cristiana, tu nombre, el texto de tus
+       peticiones, intenciones, notas, diario ni conversaciones con el guía.</p>
+
+    <h3>2.7. Atribución de Apple Ads — solo con estadísticas activadas</h3>
+    <p>Una vez por instalación, y solo si las estadísticas de uso están activadas, la app pide al marco
+       <strong>AdServices</strong> de Apple un token de atribución y lo envía a la API de atribución de
+       Apple. Apple responde si la instalación vino de una campaña de Apple Ads y, en su caso, los
+       identificadores de campaña, grupo de anuncios, palabra clave y anuncio, y el país. Guardamos esos
+       identificadores como propiedades de las estadísticas. Esto no usa el IDFA, no te rastrea entre
+       apps y no implica otras redes publicitarias.</p>
+
+    <h3>2.8. Notificaciones</h3>
+    <p>Si das permiso, la app muestra notificaciones <strong>locales</strong> (versículo del día y
+       recordatorios) que se generan en tu dispositivo. No usamos notificaciones push desde un servidor.</p>
+
+    <h3>2.9. Lo que no hacemos</h3>
+    <ul>
+      <li>No mostramos publicidad ni usamos el IDFA.</li>
       <li>No rastreamos tu actividad en apps o sitios de otras empresas.</li>
-      <li>No vendemos datos ni los usamos para publicidad.</li>
+      <li>No vendemos datos ni los usamos para publicidad personalizada.</li>
       <li>No accedemos a contactos, fotos, ubicación precisa, cámara ni micrófono.</li>
       <li>No publicamos nada en tu nombre sin que tú lo envíes.</li>
     </ul>
 
-    <h2>6. Proveedores</h2>
+    <h2 id="es-3">3. Creencias religiosas (datos sensibles)</h2>
+    <p>Las creencias religiosas son una categoría especial de datos (art. 9 del RGPD) y un <strong>dato
+       personal sensible</strong> según la ley mexicana de protección de datos. Por eso:</p>
     <ul>
-      <li><strong>Supabase, Inc.</strong>: aloja la base de datos de cuentas y Comunidad (servidores en la
-          Unión Europea, Fráncfort)
+      <li>La <strong>tradición cristiana</strong> que eliges se guarda <strong>solo en tu dispositivo</strong>.</li>
+      <li>Solo se comparte con <strong>Anthropic</strong>, y solo si aceptas usar el guía con IA, para
+          adaptar sus respuestas. <strong>Nunca</strong> se envía a la analítica.</li>
+      <li>Usar una app de fe puede, por sí mismo, sugerir un interés religioso, y lo que escribas en el
+          muro o en el guía puede revelar creencias. Tratamos esa información solo para darte el servicio,
+          <strong>nunca la vendemos ni la usamos para publicidad</strong>.</li>
+      <li>Tu consentimiento para estos datos es <strong>expreso</strong>: lo das con la casilla de la
+          pantalla de consentimiento de la bienvenida y, para el guía, en su pantalla de consentimiento.
+          Puedes retirarlo en cualquier momento (ver sección 9).</li>
+    </ul>
+
+    <h2 id="es-4">4. Para qué usamos tus datos</h2>
+    <ul>
+      <li><strong>Darte la app:</strong> crear y mantener tu cuenta, mostrar y moderar el muro de oración,
+          responder en el guía con IA, verificar Premium.</li>
+      <li><strong>Seguridad y moderación:</strong> prevenir abusos, spam y fraude, atender reportes y
+          bloquear usuarios.</li>
+      <li><strong>Mejorar la app (opcional):</strong> estadísticas de uso y atribución de Apple Ads para
+          saber qué funciones se usan y qué campañas funcionan.</li>
+      <li><strong>Cumplir la ley:</strong> responder a solicitudes de autoridades o atender tus derechos.</li>
+      <li><strong>Comunicarnos contigo:</strong> responder a tus mensajes de soporte.</li>
+    </ul>
+    <p>No tomamos decisiones automatizadas que produzcan efectos jurídicos sobre ti. El filtro de
+       palabras ofensivas y la ocultación automática tras varios reportes son medidas de moderación que
+       puedes cuestionar escribiéndonos.</p>
+
+    <h2 id="es-5">5. Bases legales (UE, EEE, Reino Unido y Suiza)</h2>
+    <div class="tbl"><table>
+      <tr><th>Tratamiento</th><th>Base legal</th></tr>
+      <tr><td>Cuenta, muro de oración, entrega del guía, verificación de Premium</td><td>Ejecución del contrato (los <a href="../terms/">Términos de uso</a>)</td></tr>
+      <tr><td>Guía con IA (envío a Anthropic) y tradición cristiana en el guía</td><td>Tu consentimiento (y consentimiento explícito para datos de creencias)</td></tr>
+      <tr><td>Estadísticas de uso (Amplitude) y atribución de Apple Ads</td><td>Tu consentimiento (desactivado por defecto)</td></tr>
+      <tr><td>Seguridad, prevención de abusos, moderación, límites de uso</td><td>Interés legítimo en mantener un servicio seguro</td></tr>
+      <tr><td>Conservar datos exigidos por ley o responder a autoridades</td><td>Obligación legal</td></tr>
+    </table></div>
+    <p>Retirar el consentimiento no afecta a la licitud del tratamiento previo.</p>
+
+    <h2 id="es-6">6. Con quién compartimos datos</h2>
+    <p>Solo con estos proveedores, que tratan los datos por encargo nuestro y según sus condiciones de
+       tratamiento de datos:</p>
+    <ul>
+      <li><strong>Supabase, Inc.</strong>: aloja la base de datos de cuentas y Comunidad en la Unión Europea
+          (Fráncfort) y ejecuta las funciones del servidor
           (<a href="https://supabase.com/privacy" target="_blank" rel="noopener">Política de Privacidad</a>).</li>
-      <li><strong>Anthropic, PBC</strong>: genera las respuestas de tu guía
+      <li><strong>Anthropic, PBC</strong> (EE. UU.): genera las respuestas del guía, solo con tu consentimiento
           (<a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">Política de Privacidad</a>).</li>
-      <li><strong>Amplitude, Inc.</strong>: analítica de uso
+      <li><strong>Amplitude, Inc.</strong> (EE. UU.): estadísticas de uso, solo si están activadas
           (<a href="https://amplitude.com/privacy" target="_blank" rel="noopener">Política de Privacidad</a>).</li>
-      <li><strong>Apple</strong>: inicio de sesión, suscripciones y pagos
+      <li><strong>Apple</strong>: inicio de sesión, suscripciones, pagos y atribución de Apple Ads
           (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Política de Privacidad</a>).</li>
     </ul>
+    <p>Las peticiones que publicas en el muro son visibles para otros usuarios como se describe en 2.3.
+       También podemos revelar datos si la ley nos obliga, para proteger la seguridad de personas o para
+       defender nuestros derechos. No vendemos datos.</p>
 
-    <h2>7. Conservación y eliminación</h2>
+    <h2 id="es-7">7. Transferencias internacionales</h2>
+    <p>Anthropic y Amplitude procesan datos en <strong>Estados Unidos</strong>. La base de datos de Supabase
+       está en la <strong>UE</strong>, aunque Supabase, Inc. es una empresa estadounidense y puede acceder a
+       ella para darnos soporte. Estas transferencias se protegen con las condiciones de tratamiento de datos
+       de cada proveedor, que incluyen las cláusulas contractuales tipo aprobadas por la Comisión Europea u
+       otras garantías equivalentes reconocidas por la ley aplicable. Puedes pedirnos más información en el
+       correo de contacto.</p>
+
+    <h2 id="es-8">8. Cuánto tiempo conservamos los datos</h2>
+    <div class="tbl"><table>
+      <tr><th>Datos</th><th>Plazo</th></tr>
+      <tr><td>Datos en tu dispositivo (progreso, notas, diario, intenciones, tradición, historial del guía)</td><td>Hasta que los borres o desinstales la app</td></tr>
+      <tr><td>Cuenta (identificador, correo, nombre visible)</td><td>Hasta que elimines tu cuenta</td></tr>
+      <tr><td>Peticiones de oración</td><td>Visibles en el muro 7 días; se guardan en «Mis peticiones» hasta que las borres o elimines tu cuenta</td></tr>
+      <tr><td>Oraciones por otros, bloqueos, contadores de uso</td><td>Hasta que elimines tu cuenta</td></tr>
+      <tr><td>Reportes de contenido</td><td>Mientras sean necesarios para la moderación y, como máximo, hasta que se elimine la cuenta afectada, salvo obligación legal</td></tr>
+      <tr><td>Registro de uso del guía (mensajes por día y tokens, sin texto) e identificador de la transacción Premium</td><td>Hasta que elimines tu cuenta</td></tr>
+      <tr><td>Conversaciones con el guía en Anthropic</td><td>Periodo limitado según las condiciones comerciales de Anthropic; nosotros no las guardamos</td></tr>
+      <tr><td>Estadísticas de uso y datos de atribución de Apple Ads (Amplitude)</td><td>Hasta 12 meses</td></tr>
+    </table></div>
+    <p>Podemos conservar copias de seguridad durante un periodo breve o datos concretos por más tiempo si
+       una ley lo exige o para resolver una disputa.</p>
+
+    <h2 id="es-9">9. Tus derechos y cómo retirar tu consentimiento</h2>
+    <p>Según la ley de tu país, puedes pedir <strong>acceso</strong>, <strong>rectificación</strong>,
+       <strong>eliminación</strong>, <strong>oposición</strong>, <strong>limitación</strong> y
+       <strong>portabilidad</strong> de tus datos, y retirar tu consentimiento en cualquier momento.</p>
     <ul>
-      <li>Puedes <strong>eliminar tu cuenta desde la app</strong> (Perfil → Comunidad). Se borran tu cuenta,
-          nombre, peticiones, oraciones, bloqueos y demás datos asociados en nuestro servidor.</li>
-      <li>Puedes borrar en cualquier momento una petición publicada y tu conversación con el guía (esta
-          última está solo en tu dispositivo).</li>
-      <li>Las peticiones públicas dejan de mostrarse en el muro a los 7 días; siguen en «Mis peticiones»
-          hasta que las borres o elimines tu cuenta.</li>
+      <li><strong>Estadísticas y atribución de Apple Ads:</strong> apaga «Compartir estadísticas de uso» en
+          <strong>Perfil → Privacidad</strong>. Para borrar lo ya enviado, escríbenos.</li>
+      <li><strong>Guía con IA:</strong> retira tu consentimiento en <strong>Perfil</strong>. Dejaremos de
+          enviar datos a Anthropic. Puedes borrar el historial del chat en la app.</li>
+      <li><strong>Tradición cristiana:</strong> puedes cambiarla en la app.</li>
+      <li><strong>Cuenta y Comunidad:</strong> elimina tu cuenta desde la app (<strong>Perfil</strong>). Se
+          borran tu cuenta, nombre, peticiones, oraciones, bloqueos y demás datos asociados en nuestro
+          servidor. También puedes borrar cada petición publicada.</li>
+      <li><strong>Por correo:</strong> escribe a
+          <a href="mailto:dmitryvarcher@gmail.com">dmitryvarcher@gmail.com</a> desde el correo asociado a tu
+          cuenta (o indícanos cuál es). Podemos pedirte datos para verificar tu identidad. Responderemos en
+          los plazos que marque la ley aplicable (en la UE, en un mes).</li>
+    </ul>
+    <p>Si estás en la UE/EEE, el Reino Unido o Suiza, puedes reclamar ante tu autoridad de protección de
+       datos (en España, la Agencia Española de Protección de Datos). En otros países, ante la autoridad
+       competente.</p>
+
+    <h2 id="es-10">10. Edad mínima</h2>
+    <p>Prayority es para público general y <strong>no está dirigida a menores de 13 años</strong>. En
+       países donde la edad para consentir el tratamiento de datos es mayor (por ejemplo, 14 en España y
+       hasta 16 en otros países de la UE), quien no la alcance necesita el consentimiento de su madre,
+       padre o tutor. Confirmas tu edad en la pantalla de consentimiento de la bienvenida. Si crees que un
+       menor nos dio datos sin ese consentimiento, escríbenos y los eliminaremos.</p>
+
+    <h2 id="es-11">11. Seguridad</h2>
+    <p>Usamos conexiones cifradas (HTTPS), control de acceso por cuenta en la base de datos y guardamos
+       lo mínimo necesario. Ningún sistema es totalmente seguro; si ocurre un incidente que te afecte, te
+       avisaremos según exija la ley.</p>
+
+    <h2 id="es-12">12. Aviso de privacidad para México</h2>
+    <p>Este apartado complementa la política para usuarios en México, conforme a la Ley Federal de
+       Protección de Datos Personales en Posesión de los Particulares.</p>
+    <ul>
+      <li><strong>Responsable:</strong> Dmytro Varchenko, con residencia en [PAÍS / COUNTRY]. Correo:
+          <a href="mailto:dmitryvarcher@gmail.com">dmitryvarcher@gmail.com</a>.</li>
+      <li><strong>Datos:</strong> los descritos en la sección 2, incluido el dato sensible de tu tradición
+          cristiana (sección 3).</li>
+      <li><strong>Finalidades primarias</strong> (necesarias para el servicio): crear tu cuenta, operar el
+          muro de oración y su moderación, dar el guía con IA si lo activas, verificar Premium y atender
+          tus solicitudes.</li>
+      <li><strong>Finalidades secundarias</strong> (no necesarias, puedes negarte): estadísticas de uso y
+          atribución de Apple Ads. Puedes negarte desde el inicio con el interruptor de la bienvenida o en
+          cualquier momento en <strong>Perfil → Privacidad</strong>. Negarte no afecta tu acceso a la app.</li>
+      <li><strong>Datos sensibles:</strong> tratamos tu tradición cristiana solo con tu consentimiento
+          expreso, otorgado con la casilla de la bienvenida y la pantalla de consentimiento del guía.</li>
+      <li><strong>Transferencias:</strong> enviamos datos a Supabase, Anthropic, Amplitude y Apple como
+          encargados que los tratan por nuestra cuenta (sección 6), incluso fuera de México. No hacemos
+          transferencias a terceros que requieran tu consentimiento adicional.</li>
+      <li><strong>Derechos ARCO</strong> (Acceso, Rectificación, Cancelación y Oposición) <strong>y
+          revocación del consentimiento:</strong> envía un correo a
+          <a href="mailto:dmitryvarcher@gmail.com">dmitryvarcher@gmail.com</a> con tu nombre, el correo de tu
+          cuenta, el derecho que quieres ejercer y una descripción clara de lo que pides. Te responderemos
+          en los plazos que marca la ley. También puedes eliminar tu cuenta y cambiar tus permisos desde la
+          app.</li>
+      <li><strong>Limitar el uso o divulgación:</strong> apaga las estadísticas o el guía en la app, o
+          escríbenos.</li>
+      <li><strong>Cambios al aviso:</strong> los publicaremos en esta página y, si son importantes, te
+          avisaremos en la app.</li>
+    </ul>
+    <p>Si consideras que tu derecho a la protección de datos ha sido vulnerado, puedes acudir a la
+       autoridad mexicana competente en la materia.</p>
+
+    <h2 id="es-13">13. Estados Unidos y California</h2>
+    <ul>
+      <li>No <strong>vendemos</strong> datos personales ni los <strong>compartimos</strong> para publicidad
+          conductual entre contextos (cross-context behavioral advertising).</li>
+      <li>Categorías que tratamos: identificadores (ID de cuenta, correo, ID aleatorio de dispositivo),
+          actividad en la app, ubicación aproximada (país), contenido que publicas y, con tu consentimiento,
+          información que puede revelar creencias religiosas. Fuentes y fines: los de las secciones 2 y 4.</li>
+      <li>Puedes pedir <strong>saber</strong> qué datos tenemos, <strong>eliminarlos</strong> o
+          <strong>corregirlos</strong>, y limitar el uso de datos sensibles, escribiendo al correo de
+          contacto o usando las opciones de la app. Puede actuar un agente autorizado en tu nombre.</li>
+      <li>No te discriminaremos por ejercer tus derechos.</li>
     </ul>
 
-    <h2>8. Tus derechos</h2>
-    <p>Puedes pedirnos acceso, corrección o eliminación de tus datos, o la eliminación de los datos de
-       analítica asociados a tu dispositivo, escribiendo al correo de contacto. Si estás en la Unión
-       Europea, también puedes reclamar ante tu autoridad de protección de datos.</p>
+    <h2 id="es-14">14. Señales «Do Not Track»</h2>
+    <p>No rastreamos a los usuarios entre apps o sitios de terceros, así que las señales «Do Not Track»
+       no cambian nada en la app. Los controles de la sección 9 sí aplican.</p>
 
-    <h2>9. Niños</h2>
-    <p>Prayority es una app para público general y no está dirigida a menores de 13 años. No
-       recopilamos a sabiendas datos de menores de 13; si crees que lo hemos hecho, escríbenos y los
-       eliminaremos.</p>
+    <h2 id="es-15">15. Cambios en esta política</h2>
+    <p>Podemos actualizar esta política. Publicaremos la versión vigente en esta página con su fecha. Si
+       el cambio es importante (por ejemplo, un nuevo uso de tus datos o un nuevo proveedor), te avisaremos
+       en la app y, cuando la ley lo exija, te pediremos de nuevo tu consentimiento.</p>
 
-    <h2>10. Suscripciones y pagos</h2>
-    <p>Las suscripciones Premium se gestionan en su totalidad a través de <strong>Apple App Store</strong>.
-       Nosotros no procesamos pagos ni recibimos los datos de tu tarjeta.</p>
-
-    <h2>11. Notificaciones</h2>
-    <p>Si concedes permiso, la app envía notificaciones locales (versículo del día y recordatorios).
-       Se generan en tu dispositivo.</p>
-
-    <h2>12. Cambios</h2>
-    <p>Podemos actualizar esta política. Publicaremos la versión vigente en esta página con su fecha.</p>
-
-    <h2>13. Contacto</h2>
-    <p>Para cualquier duda sobre privacidad: <a href="mailto:dmitryvarcher@gmail.com">dmitryvarcher@gmail.com</a></p>
+    <h2 id="es-16">16. Contacto</h2>
+    <p>Para cualquier duda o solicitud de privacidad:
+       <a href="mailto:dmitryvarcher@gmail.com">dmitryvarcher@gmail.com</a></p>
 
   </section>
 
@@ -175,135 +373,322 @@
   <section id="english" lang="en">
     <header style="border:0;padding:0;margin:32px 0 0;">
       <h1>Prayority — Privacy Policy</h1>
-      <p class="eff">Last updated: October 27, 2026 · App version: 1.0.0</p>
-      <p class="nav">Language: <a href="#espanol">↑ Español</a> · <strong>English</strong></p>
+      <p class="eff">Last updated: October 30, 2026</p>
+      <p class="nav">Language: <a href="#espanol">↑ Español</a> · <strong>English</strong> · <a href="../terms/#english">Terms of Use</a></p>
     </header>
 
-    <h2>Summary</h2>
-    <p>Prayority is an app for learning the Bible through short lessons, reading, prayer, and a verse of
-       the day. <strong>You can use it without signing up.</strong> We show no ads, do not sell data, and
-       <strong>do not track you</strong> across other companies' apps or websites.</p>
-    <p>Some features are optional and only send data if you use them:</p>
+    <div class="box">
+      <p><strong>In short.</strong> Prayority is an app to read and listen to the Bible, pray and learn.
+         Most of what you do (progress, notes, journal, intentions, your Christian tradition)
+         <strong>stays on your phone</strong>. We show no ads, do not sell data, and do not track you
+         across other companies' apps. We only send data to our providers when a feature needs it (your
+         account, the prayer wall, the AI guide) or when you agree (usage statistics). You can change your
+         choices in <strong>Profile → Privacy</strong> and delete your account in the app.</p>
+    </div>
+
+    <nav class="toc" aria-label="Contents">
+      <strong>Contents</strong>
+      <ol>
+        <li><a href="#en-1">Who is responsible</a></li>
+        <li><a href="#en-2">What data we process</a></li>
+        <li><a href="#en-3">Religious beliefs (sensitive data)</a></li>
+        <li><a href="#en-4">Why we use your data</a></li>
+        <li><a href="#en-5">Legal bases (EU, EEA, UK and Switzerland)</a></li>
+        <li><a href="#en-6">Who we share data with</a></li>
+        <li><a href="#en-7">International transfers</a></li>
+        <li><a href="#en-8">How long we keep data</a></li>
+        <li><a href="#en-9">Your rights and how to withdraw consent</a></li>
+        <li><a href="#en-10">Minimum age</a></li>
+        <li><a href="#en-11">Security</a></li>
+        <li><a href="#en-12">Privacy notice for Mexico</a></li>
+        <li><a href="#en-13">United States and California</a></li>
+        <li><a href="#en-14">"Do Not Track" signals</a></li>
+        <li><a href="#en-15">Changes to this policy</a></li>
+        <li><a href="#en-16">Contact</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="en-1">1. Who is responsible</h2>
+    <p>The controller of your data in the Prayority app is <strong>Dmytro Varchenko</strong>, an
+       independent developer residing in <strong>[PAÍS / COUNTRY]</strong> ("we", "us").
+       Contact: <a href="mailto:dmitryvarcher@gmail.com">dmitryvarcher@gmail.com</a>.</p>
+    <p>This policy explains what data the app processes, why, who it is shared with, and your rights.
+       It complements the <a href="../terms/#english">Terms of Use</a>.</p>
+
+    <h2 id="en-2">2. What data we process</h2>
+
+    <h3>2.1. Data that stays on your device</h3>
+    <p>These never leave your phone: your progress (lessons, courses, streak, XP, streak protections),
+       "Today" moments, heart plans and memorized verses, your Bible highlights, bookmarks and notes, your
+       journal, your intentions, your preferences, the <strong>Christian tradition</strong> you choose
+       (Catholic, Evangelical or Orthodox), your conversation history with the guide, and read-aloud (it
+       uses the system voice). Deleting the app deletes them. We have no access to them.</p>
+
+    <h3>2.2. Account (Sign in with Apple)</h3>
+    <p>After the welcome screens, the app asks you to sign in with <strong>Sign in with Apple</strong>. We
+       store on our server:</p>
     <ul>
-      <li><strong>Community</strong> (prayer request wall): requires Sign in with Apple.</li>
-      <li><strong>Your guide</strong> (AI assistant): requires signing in and your prior consent in the app.</li>
+      <li>the <strong>account identifier</strong> generated by Apple;</li>
+      <li>the <strong>email</strong> Apple shares with us (it can be a private Apple relay address if you
+          choose to hide yours);</li>
+      <li>your <strong>display name</strong> (the one Apple shares or the one you typed at the start; you
+          can change it).</li>
     </ul>
+    <p>We never receive your Apple password.</p>
 
-    <h2>1. Data that stays on your device</h2>
-    <p>These never leave your phone: your progress (lessons, streak, XP, streak protections), completed
-       plans and "Today" sessions, your Bible highlights, bookmarks and notes, your journal, your
-       preferences, your conversation history with the guide, and read-aloud (it uses the system voice).
-       Deleting the app deletes them.</p>
-
-    <h2>2. Usage analytics (Amplitude)</h2>
-    <p>To understand how the app is used and improve it, the <strong>Amplitude</strong> service receives:</p>
+    <h3>2.3. Prayer wall (Community)</h3>
+    <p>If you use the wall, we store on our server:</p>
     <ul>
-      <li><strong>App usage:</strong> events such as opening the app, starting or completing a lesson,
-          opening the Bible reader or a prayer moment, and session length.</li>
-      <li><strong>Purchases:</strong> subscription start, success, or cancellation (no payment details).</li>
-      <li><strong>Device identifier:</strong> a random identifier generated by the app. We do not use the
-          advertising identifier (IDFA).</li>
-      <li><strong>Approximate location:</strong> country only, inferred from the connection. We do not
-          store your IP address, city, or precise location.</li>
-      <li><strong>Technical data:</strong> device model, OS and app version, language.</li>
-    </ul>
-    <p>Analytics never include your Christian tradition or the text of your requests, intentions,
-       notes, journal, or conversations.</p>
-
-    <h2>3. Account and Community (optional)</h2>
-    <p>If you use <strong>Sign in with Apple</strong>, we create an account and store on our server:</p>
-    <ul>
-      <li><strong>Account identifier</strong> and the <strong>email</strong> Apple shares with us (it can
-          be a private Apple relay address if you choose to hide yours).</li>
-      <li><strong>Display name:</strong> your first name, if Apple shares it or you typed it when you
-          started. You can change it.</li>
-      <li><strong>Prayer requests you post:</strong> the text, category, audience, whether it is
-          anonymous, your testimony if you mark it answered, and dates.</li>
+      <li><strong>Requests you post:</strong> text, category, audience, whether it is anonymous, your
+          testimony if you mark it answered, and dates.</li>
       <li><strong>Prayers for others:</strong> which requests you prayed for.</li>
-      <li><strong>Moderation and safety:</strong> reports you send, users you block, and counters that
-          limit abuse (for example, posts per day).</li>
+      <li><strong>Moderation and safety:</strong> reports you send or receive, users you block, and
+          counters that limit abuse (for example, posts per day).</li>
     </ul>
     <p><strong>Who sees what:</strong> requests on the public wall are visible to signed-in people for
-       7 days. If you post anonymously, your name and account are not shown. We never show your email.
-       The author of a request sees how many people prayed, but not who (except their friends).</p>
-    <p><strong>Moderation:</strong> we filter offensive words, you can report content and block users, and
-       posts with several reports are hidden automatically.</p>
+       7 days. If you post anonymously, your name is not shown. We never show your email. The author sees
+       how many people prayed, but not who (except their friends). You must accept the community rules
+       before posting.</p>
 
-    <h2>4. Your AI guide (optional)</h2>
-    <p>We ask for your permission before you use it. To answer you, we send to <strong>Anthropic</strong>
-       (provider of the Claude AI model), through our server:</p>
+    <h3>2.4. AI Bible guide</h3>
+    <p>The guide is powered by <strong>Claude</strong>, an AI model by <strong>Anthropic, PBC</strong>
+       (USA). It only works <strong>after you give prior consent</strong> in the app. To answer you, we
+       send to Anthropic, through our server:</p>
     <ul>
       <li>your recent messages in the conversation, and</li>
-      <li>a summary of your progress: display name, the goal and level you chose at the start, streak, XP,
-          lessons completed, current course and lesson, the verse of the day, the lesson or verse you
-          opened the chat from, and your Christian tradition if you chose one (Catholic, Evangelical or
-          Orthodox), so it can answer within it.</li>
+      <li>a context summary: display name, the goal and level you chose at the start, streak, XP, lessons
+          completed, current course and lesson, the verse of the day, the lesson or verse you opened the
+          chat from and, if you chose one, your Christian tradition, so it can answer within it.</li>
     </ul>
     <p>Our server <strong>does not store your conversations</strong>: it only forwards them and records
-       how many messages you used today and the technical usage of each reply (without the text). Under
-       its commercial terms, Anthropic does not use this data to train its models and keeps it only for a
-       limited time
+       how many messages you sent each day and the technical usage of each reply (tokens), without the
+       text. Under its commercial terms, Anthropic does not use this data to train its models and keeps it
+       only for a limited time
        (<a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">Anthropic Privacy Policy</a>).
-       Avoid sharing sensitive information in the chat. Replies are generated by AI, may contain mistakes,
-       and do not replace advice from a pastor, priest, or professional.</p>
-    <p>If you have Premium, the app sends our server the Apple-signed purchase receipt to lift the daily
-       limit; we keep its identifier to link it to a single account.</p>
+       Do not share other people's personal data or anything you do not want to send.</p>
+    <p>The free plan allows 5 messages a day. If you have Premium, the app sends our server the
+       Apple-signed transaction (JWS) to lift the limit; we keep its identifier to link it to a single
+       account.</p>
 
-    <h2>5. What we do NOT do</h2>
+    <h3>2.5. Purchases</h3>
+    <p>Subscriptions are bought and managed through Apple. <strong>We never receive your payment
+       details.</strong> We only see the transaction information Apple gives us to verify Premium.</p>
+
+    <h3>2.6. Usage statistics (Amplitude) — optional</h3>
+    <p>The consent screen during onboarding has a <strong>"Share usage statistics"</strong> toggle. It is
+       <strong>off by default</strong> if you are in the EU/EEA, the UK or Switzerland, and on by default
+       elsewhere. You can change it at any time in <strong>Profile → Privacy</strong>. When it is off,
+       <strong>nothing is sent to Amplitude</strong>.</p>
+    <p>When it is on, <strong>Amplitude, Inc.</strong> (US servers) receives:</p>
     <ul>
-      <li>We show no ads and do not use the advertising identifier (IDFA).</li>
+      <li><strong>Usage events:</strong> app opens and sessions; onboarding steps (with the typed name and
+          the tradition masked); lessons started and completed; Bible chapters read or listened to; prayers
+          started and completed (with the prayer ID and music track); Rosary started and completed (with
+          the set of mysteries); music selected; tab viewed; prayer request posted or prayed for (only the
+          category and whether it is anonymous); message sent to the guide (only the turn number); paywall
+          shown; trial or subscription started (with the product ID).</li>
+      <li><strong>Device identifier:</strong> a random identifier generated by the app. We do not use the
+          advertising identifier (IDFA) and do not ask for tracking permission (ATT).</li>
+      <li><strong>Country:</strong> country only. IP tracking is disabled; IP address, city and carrier
+          are not stored.</li>
+      <li><strong>Technical data:</strong> device model, OS and app version, device language and content
+          language.</li>
+    </ul>
+    <p><strong>Never sent to Amplitude:</strong> your Christian tradition, your name, or the text of your
+       requests, intentions, notes, journal or guide conversations.</p>
+
+    <h3>2.7. Apple Ads attribution — only with statistics on</h3>
+    <p>Once per install, and only if usage statistics are on, the app asks Apple's
+       <strong>AdServices</strong> framework for an attribution token and sends it to Apple's attribution
+       API. Apple replies whether the install came from an Apple Ads campaign and, if so, the campaign, ad
+       group, keyword and ad IDs, and the country. We store these IDs as analytics properties. This does
+       not use the IDFA, does not track you across apps, and involves no other ad networks.</p>
+
+    <h3>2.8. Notifications</h3>
+    <p>If you grant permission, the app shows <strong>local</strong> notifications (verse of the day and
+       reminders) generated on your device. We do not send server push notifications.</p>
+
+    <h3>2.9. What we do not do</h3>
+    <ul>
+      <li>We show no ads and do not use the IDFA.</li>
       <li>We do not track your activity across other companies' apps or websites.</li>
-      <li>We do not sell data or use it for advertising.</li>
-      <li>We do not access contacts, photos, precise location, camera, or microphone.</li>
+      <li>We do not sell data or use it for targeted advertising.</li>
+      <li>We do not access contacts, photos, precise location, camera or microphone.</li>
       <li>We never post anything on your behalf unless you send it.</li>
     </ul>
 
-    <h2>6. Service providers</h2>
+    <h2 id="en-3">3. Religious beliefs (sensitive data)</h2>
+    <p>Religious beliefs are a special category of data (GDPR Art. 9) and <strong>sensitive personal
+       data</strong> under Mexican data protection law. Therefore:</p>
     <ul>
-      <li><strong>Supabase, Inc.</strong>: hosts the account and Community database (servers in the
-          European Union, Frankfurt)
+      <li>The <strong>Christian tradition</strong> you choose is stored <strong>only on your device</strong>.</li>
+      <li>It is shared only with <strong>Anthropic</strong>, and only if you agree to use the AI guide, to
+          tailor its answers. It is <strong>never</strong> sent to analytics.</li>
+      <li>Using a faith app may itself suggest a religious interest, and what you write on the wall or to
+          the guide may reveal beliefs. We process that information only to provide the service and
+          <strong>never sell it or use it for advertising</strong>.</li>
+      <li>Your consent to this data is <strong>express</strong>: you give it with the checkbox on the
+          onboarding consent screen and, for the guide, on its consent screen. You can withdraw it at any
+          time (see section 9).</li>
+    </ul>
+
+    <h2 id="en-4">4. Why we use your data</h2>
+    <ul>
+      <li><strong>To provide the app:</strong> create and maintain your account, show and moderate the
+          prayer wall, answer through the AI guide, verify Premium.</li>
+      <li><strong>Safety and moderation:</strong> prevent abuse, spam and fraud, handle reports and block
+          users.</li>
+      <li><strong>To improve the app (optional):</strong> usage statistics and Apple Ads attribution to
+          learn which features are used and which campaigns work.</li>
+      <li><strong>To comply with the law:</strong> respond to authorities or handle your rights requests.</li>
+      <li><strong>To talk to you:</strong> answer your support messages.</li>
+    </ul>
+    <p>We make no automated decisions that produce legal effects on you. The offensive-word filter and
+       automatic hiding after several reports are moderation measures you can challenge by writing to us.</p>
+
+    <h2 id="en-5">5. Legal bases (EU, EEA, UK and Switzerland)</h2>
+    <div class="tbl"><table>
+      <tr><th>Processing</th><th>Legal basis</th></tr>
+      <tr><td>Account, prayer wall, guide delivery, Premium verification</td><td>Performance of the contract (the <a href="../terms/#english">Terms of Use</a>)</td></tr>
+      <tr><td>AI guide (sending to Anthropic) and Christian tradition in the guide</td><td>Your consent (explicit consent for belief data)</td></tr>
+      <tr><td>Usage statistics (Amplitude) and Apple Ads attribution</td><td>Your consent (off by default)</td></tr>
+      <tr><td>Security, abuse prevention, moderation, usage limits</td><td>Legitimate interest in keeping the service safe</td></tr>
+      <tr><td>Keeping data required by law or responding to authorities</td><td>Legal obligation</td></tr>
+    </table></div>
+    <p>Withdrawing consent does not affect the lawfulness of processing before withdrawal.</p>
+
+    <h2 id="en-6">6. Who we share data with</h2>
+    <p>Only with these providers, who process data on our behalf under their data processing terms:</p>
+    <ul>
+      <li><strong>Supabase, Inc.</strong>: hosts the account and Community database in the European Union
+          (Frankfurt) and runs the server functions
           (<a href="https://supabase.com/privacy" target="_blank" rel="noopener">Privacy Policy</a>).</li>
-      <li><strong>Anthropic, PBC</strong>: generates your guide's replies
+      <li><strong>Anthropic, PBC</strong> (USA): generates the guide's replies, only with your consent
           (<a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">Privacy Policy</a>).</li>
-      <li><strong>Amplitude, Inc.</strong>: usage analytics
+      <li><strong>Amplitude, Inc.</strong> (USA): usage statistics, only if turned on
           (<a href="https://amplitude.com/privacy" target="_blank" rel="noopener">Privacy Policy</a>).</li>
-      <li><strong>Apple</strong>: sign-in, subscriptions, and payments
+      <li><strong>Apple</strong>: sign-in, subscriptions, payments and Apple Ads attribution
           (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Privacy Policy</a>).</li>
     </ul>
+    <p>Requests you post on the wall are visible to other users as described in 2.3. We may also disclose
+       data if the law requires it, to protect people's safety, or to defend our rights. We do not sell
+       data.</p>
 
-    <h2>7. Retention and deletion</h2>
+    <h2 id="en-7">7. International transfers</h2>
+    <p>Anthropic and Amplitude process data in the <strong>United States</strong>. The Supabase database
+       is in the <strong>EU</strong>, although Supabase, Inc. is a US company and may access it to support
+       us. These transfers are protected by each provider's data processing terms, which include the
+       European Commission's standard contractual clauses or other equivalent safeguards recognized by
+       applicable law. You can ask us for more information at the contact email.</p>
+
+    <h2 id="en-8">8. How long we keep data</h2>
+    <div class="tbl"><table>
+      <tr><th>Data</th><th>Period</th></tr>
+      <tr><td>On-device data (progress, notes, journal, intentions, tradition, guide history)</td><td>Until you delete it or uninstall the app</td></tr>
+      <tr><td>Account (identifier, email, display name)</td><td>Until you delete your account</td></tr>
+      <tr><td>Prayer requests</td><td>Visible on the wall for 7 days; kept in "My requests" until you delete them or your account</td></tr>
+      <tr><td>Prayers for others, blocks, usage counters</td><td>Until you delete your account</td></tr>
+      <tr><td>Content reports</td><td>As long as needed for moderation and at most until the affected account is deleted, unless the law requires otherwise</td></tr>
+      <tr><td>Guide usage log (messages per day and tokens, no text) and Premium transaction ID</td><td>Until you delete your account</td></tr>
+      <tr><td>Guide conversations at Anthropic</td><td>A limited period under Anthropic's commercial terms; we do not store them</td></tr>
+      <tr><td>Usage statistics and Apple Ads attribution data (Amplitude)</td><td>Up to 12 months</td></tr>
+    </table></div>
+    <p>We may keep backups for a short period, or specific data longer if the law requires it or to
+       resolve a dispute.</p>
+
+    <h2 id="en-9">9. Your rights and how to withdraw consent</h2>
+    <p>Depending on the law of your country, you can request <strong>access</strong>,
+       <strong>correction</strong>, <strong>deletion</strong>, <strong>objection</strong>,
+       <strong>restriction</strong> and <strong>portability</strong> of your data, and withdraw consent at
+       any time.</p>
     <ul>
-      <li>You can <strong>delete your account in the app</strong> (Profile → Community). This deletes your
-          account, name, requests, prayers, blocks, and other associated data on our server.</li>
-      <li>You can delete a posted request at any time, and your conversation with the guide (which lives
-          only on your device).</li>
-      <li>Public requests leave the wall after 7 days; they stay in "My requests" until you delete them or
-          your account.</li>
+      <li><strong>Statistics and Apple Ads attribution:</strong> turn off "Share usage statistics" in
+          <strong>Profile → Privacy</strong>. To delete what was already sent, write to us.</li>
+      <li><strong>AI guide:</strong> withdraw your consent in <strong>Profile</strong>. We will stop sending
+          data to Anthropic. You can delete the chat history in the app.</li>
+      <li><strong>Christian tradition:</strong> you can change it in the app.</li>
+      <li><strong>Account and Community:</strong> delete your account in the app (<strong>Profile</strong>).
+          This deletes your account, name, requests, prayers, blocks and other associated data on our
+          server. You can also delete each posted request.</li>
+      <li><strong>By email:</strong> write to
+          <a href="mailto:dmitryvarcher@gmail.com">dmitryvarcher@gmail.com</a> from the email linked to your
+          account (or tell us which one it is). We may ask for information to verify your identity. We will
+          reply within the time limits of applicable law (in the EU, one month).</li>
+    </ul>
+    <p>If you are in the EU/EEA, the UK or Switzerland, you can lodge a complaint with your data
+       protection authority (in Spain, the Agencia Española de Protección de Datos). Elsewhere, with the
+       competent authority.</p>
+
+    <h2 id="en-10">10. Minimum age</h2>
+    <p>Prayority is a general-audience app and is <strong>not directed to children under 13</strong>. In
+       countries where the age of digital consent is higher (for example, 14 in Spain and up to 16 in other
+       EU countries), users below that age need consent from a parent or guardian. You confirm your age on
+       the onboarding consent screen. If you believe a minor gave us data without that consent, contact us
+       and we will delete it.</p>
+
+    <h2 id="en-11">11. Security</h2>
+    <p>We use encrypted connections (HTTPS), per-account access control in the database, and keep only
+       what is necessary. No system is completely secure; if an incident affects you, we will notify you as
+       the law requires.</p>
+
+    <h2 id="en-12">12. Privacy notice for Mexico</h2>
+    <p>This section supplements the policy for users in Mexico, under the Federal Law on the Protection of
+       Personal Data Held by Private Parties.</p>
+    <ul>
+      <li><strong>Controller:</strong> Dmytro Varchenko, residing in [PAÍS / COUNTRY]. Email:
+          <a href="mailto:dmitryvarcher@gmail.com">dmitryvarcher@gmail.com</a>.</li>
+      <li><strong>Data:</strong> as described in section 2, including the sensitive data of your Christian
+          tradition (section 3).</li>
+      <li><strong>Primary purposes</strong> (needed for the service): create your account, run and
+          moderate the prayer wall, provide the AI guide if you turn it on, verify Premium, and handle your
+          requests.</li>
+      <li><strong>Secondary purposes</strong> (not needed; you can refuse): usage statistics and Apple Ads
+          attribution. You can refuse from the start with the onboarding toggle or at any time in
+          <strong>Profile → Privacy</strong>. Refusing does not affect your access to the app.</li>
+      <li><strong>Sensitive data:</strong> we process your Christian tradition only with your express
+          consent, given with the onboarding checkbox and the guide's consent screen.</li>
+      <li><strong>Transfers:</strong> we send data to Supabase, Anthropic, Amplitude and Apple as processors
+          acting on our behalf (section 6), including outside Mexico. We make no transfers to third parties
+          that would require additional consent.</li>
+      <li><strong>ARCO rights</strong> (Access, Rectification, Cancellation and Opposition) <strong>and
+          revocation of consent:</strong> email
+          <a href="mailto:dmitryvarcher@gmail.com">dmitryvarcher@gmail.com</a> with your name, your account
+          email, the right you want to exercise and a clear description of your request. We will reply
+          within the legal time limits. You can also delete your account and change your choices in the
+          app.</li>
+      <li><strong>Limiting use or disclosure:</strong> turn off statistics or the guide in the app, or
+          write to us.</li>
+      <li><strong>Changes to this notice:</strong> we will post them on this page and, if material, notify
+          you in the app.</li>
+    </ul>
+    <p>If you believe your right to data protection has been violated, you may contact the competent
+       Mexican authority.</p>
+
+    <h2 id="en-13">13. United States and California</h2>
+    <ul>
+      <li>We do not <strong>sell</strong> personal information or <strong>share</strong> it for
+          cross-context behavioral advertising.</li>
+      <li>Categories we process: identifiers (account ID, email, random device ID), in-app activity,
+          approximate location (country), content you post and, with your consent, information that may
+          reveal religious beliefs. Sources and purposes: as in sections 2 and 4.</li>
+      <li>You can ask to <strong>know</strong> what data we hold, to <strong>delete</strong> or
+          <strong>correct</strong> it, and to limit the use of sensitive data, by writing to the contact
+          email or using the in-app options. An authorized agent may act on your behalf.</li>
+      <li>We will not discriminate against you for exercising your rights.</li>
     </ul>
 
-    <h2>8. Your rights</h2>
-    <p>You can ask us for access to, correction of, or deletion of your data, or deletion of analytics data
-       associated with your device, by writing to the contact email. If you are in the European Union, you
-       may also lodge a complaint with your data protection authority.</p>
+    <h2 id="en-14">14. "Do Not Track" signals</h2>
+    <p>We do not track users across third-party apps or websites, so "Do Not Track" signals change nothing
+       in the app. The controls in section 9 do apply.</p>
 
-    <h2>9. Children</h2>
-    <p>Prayority is a general-audience app and is not directed to children under 13. We do not
-       knowingly collect data from children under 13; if you believe we have, contact us and we will
-       delete it.</p>
+    <h2 id="en-15">15. Changes to this policy</h2>
+    <p>We may update this policy. The current version will be posted on this page with its date. If a
+       change is material (for example, a new use of your data or a new provider), we will notify you in
+       the app and, where the law requires it, ask for your consent again.</p>
 
-    <h2>10. Subscriptions and payments</h2>
-    <p>Premium subscriptions are handled entirely through the <strong>Apple App Store</strong>. We do
-       not process payments and never receive your card details.</p>
-
-    <h2>11. Notifications</h2>
-    <p>If you grant permission, the app sends local notifications (verse of the day and reminders).
-       They are generated on your device.</p>
-
-    <h2>12. Changes</h2>
-    <p>We may update this policy. The current version will be posted on this page with its date.</p>
-
-    <h2>13. Contact</h2>
-    <p>For any privacy questions: <a href="mailto:dmitryvarcher@gmail.com">dmitryvarcher@gmail.com</a></p>
+    <h2 id="en-16">16. Contact</h2>
+    <p>For any privacy question or request:
+       <a href="mailto:dmitryvarcher@gmail.com">dmitryvarcher@gmail.com</a></p>
   </section>
 
   <footer>
